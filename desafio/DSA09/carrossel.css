@@ -1,0 +1,27 @@
+@charset : "UTF-8";
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .conteiner{
+            max-width: 550px;
+            min-width: 350px;
+        }
+        .carrossel{
+            display: grid;
+            grid-auto-flow: column;
+            gap: 1.2rem;
+            overflow-x: auto;
+            overscroll-behavior-x: contain;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+        }
+        .card{
+            background-color: linear-gradient(90deg, #580f0f, #00ff00, #0e0e68);
+            min-height: 350px;
+            min-width: 450px;
+            scroll-snap-align:start;
+            border-radius: 40px;
+        }
