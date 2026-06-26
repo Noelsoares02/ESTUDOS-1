@@ -9,6 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
+            position: relative;
             width: 500px;
             border-collapse: collapse;
         }
@@ -19,33 +20,38 @@
         td.num{
             text-align: right;
         }
+        caption{
+            background-color: lightgray;
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+        }
         thead{
-            background-color: gray;
+            background-color:#383838;
             color: white;
         }
+        tbody >tr:nth-child(2n){
+            background-color:  lightgray;
+        }
         tfoot{
-            background-color: gray;
+            background-color:#383838;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:#383838 ;
         }
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
-<!--
-    ANATOMIA PARA TABALAS GRANDES 
-    TABALAS:
-    THEAD
-        TR, TD,TH
-    TBADY
-        TR, TD,TH
-    TFOOT
-        TR, TD,TH
-    -->
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                <th>População</th>
+                    <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
                 
             </thead><tbody>
@@ -76,13 +82,25 @@
     <tr><td>São Paulo</td><td class="num">46.081.801</td></tr>
     <tr><td>Sergipe</td><td class="num">2.299.425</td></tr>
     <tr><td>Tocantins</td><td class="num">1.586.859</td></tr>
-</tbody>
-            <tfoot>                
+    </tbody>
+     <tfoot>                
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>213.421.037</strong></td>
                 </tr>
             </tfoot>
         </table>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nulla dolores accusantium animi magnam eligendi inventore voluptates veniam sint nam nemo maiores nostrum ad iste, provident perspiciatis cum placeat eos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempore nam aperiam explicabo vitae corporis suscipit maiores magnam ipsa sit rem facilis mollitia quos, ratione quod dolorum aspernatur sequi voluptatem.</p>
+           
 </body>
 </html>
