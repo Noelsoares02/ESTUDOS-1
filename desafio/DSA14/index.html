@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +10,100 @@
             }
             table{
                 border-collapse: collapse;
-                width: 400px;
+                width: 550px;
             }
-            td{
+            th{
+                color: white;
+                background-color:gray;
                 border: 1px solid black;
                 padding: 10px;
                 text-align: center;
             }
-                  
+            td{
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+            .area {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+            }
+            .materia{
+                text-align: left;
+            }     
     </style>
 </head>
 <body>
+<table>
     <thead>
-
+        <tr>
+            <th cowspan="2" rowspan="2">Area</th>
+            <th cowspan="2" rowspan="2">Disciplina </th>
+            <th colspan="2">Notas </th>
+            <th rowspan="2">Média</th>
+        </tr>
+        <tr>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+        </tr>
+       
     </thead>
     <tbody>
-        
-    </tbody>
+         <tr>
+            <td rowspan="4" class="area">Exatas</td>
+            <td class='materia'>Matematica</td>
+            <td> 00</td>
+            <td> 00</td>
+            <td>00</td>
+            
+          </tr>
+         <tr>
+            <td class="materia">Fisica</td>
+            <td> 00</td>
+            <td> 00</td>                
+            <td> 00</td>
+        </tr>
+         <tr>
+            <td class="materia">Quimica</td>
+            <td> 00</td>
+            <td> 00</td>
+            <td>00</td>
+           
+        </tr>
+        <tr>
+            <td class="materia">Biologia</td>
+            <td> 00</td>
+            <td> 00</td>
+            <td> 00</td>
+            
+        </tr>
+        <tr>
+            <th colspan="4">Media Extra</th >
+            <th> 00</th>
+
+        </tr>
+        <tr>
+            <td rowspan="2" class="area">Humanas</td>
+            <td class="materia">Historia</td>
+            <td> 00</td>
+            <td>00</td> 
+            <td> 00</td> 
+                 
+         </tr>
+         <tr>
+            <td class="materia">Geografia</td>
+            <td>00</td>
+            <td>00</td> 
+            <td>00</td> 
+                 
+         </tr>
+        <tr>
+            <th colspan="4">Media de Humanas</th >
+            <th> 00</th>
+
+        </tr>
+            </tbody>
+</table>
+   
 </body>
 </html>
