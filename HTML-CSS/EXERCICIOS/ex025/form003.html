@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iuse">Usuário:</label>
+            <input type="text" id="iuse" name="iuse" required minlength="3" maxlength="20" placeholder="Digite seu usuário">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" id="imedia" name="imedia" required min="0" max="10" step="0.5" placeholder="Digite sua média" required>
+        </p>
+        <p>
+            <label for="imes"> Periodo letivo:</label>
+            <input type="month" id="imes" name="imes" required  placeholder="0 a 12" step="0.1">
+        </p>
+        <P>
+            <label for="idia">Dia da Prova:</label>
+            <input type="date" id="idia" name="idia" required>
+        </P>
+        <p>
+            <label for="ihora">Hora da Prova:</label>
+            <input type="time" id="ihora" name="ihora" required>
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" id="isenha" name="isenha" required minlength="6" maxlength="20" size="8"placeholder="Digite sua senha">
+                </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+</body>
+</html>
