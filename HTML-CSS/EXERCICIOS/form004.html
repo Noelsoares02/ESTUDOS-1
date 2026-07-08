@@ -8,18 +8,22 @@
 <body>
     <h1>Formulário de Contato</h1>
     <form action="cadastro.php" method="get" autocomplete="on"''>
-        <p>
-            <label for="imail">E-mail:</label>
-            <input type="email" id="imail" name="imail"  autocomplete="imail" required>
-        </p>
-        <p>
-            <label for="itel">Telefone:</label>
-            <input type="tel" id="itel" name="itel"  autocomplete="itel" required>
-        </p>
-        <p>
-            <label for="itext">Mensagem:</label>
-            <textarea id="itext" name="itext"  autocomplete="itext" required></textarea>      
-        </p>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <p>
+                <label for="imail">E-mail:</label>
+                <input type="email" id="imail" name="imail"  autocomplete="imail" placeholder="Ex: seuemail@dominio.com" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" id="itel" name="itel"  autocomplete="itel" placeholder="Ex: (xx) xxxxx-xxxx" required>
+            </p>
+            <p>
+                <label for="itext">Mensagem:</label>
+                <textarea id="itext" name="itext"  autocomplete="itext" required></textarea>
+            </p>
+            
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
