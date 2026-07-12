@@ -1,17 +1,38 @@
-@charset "UTF-8"; 
-/* estilo para impressora */
-* {
+@charset "UTF-8";
+
+/* Estilo para Impressão */
+
+*{
     margin: 10px;
-    padding: 10px;
-}
-html {
-    font-family: courier, monospace;
-    font-size: 1.5em;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
     line-height: 1.5em;
 }
-menu {
+
+menu{
     display: none;
 }
-article::after {
-   content: "Este artigo foi impresso em: " attr(data-hora) atraves do Site soaresnoel02.github.io;
+
+article::after{
+    content: "Este artigo foi impresso através do site desenvolvido durante os estudos de Media Queries.";
+    display: block;
+    margin-top: 30px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+article h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article{
+    width: 100%;
+}
+
+body{
+    background: white;
+    color: black;
 }
