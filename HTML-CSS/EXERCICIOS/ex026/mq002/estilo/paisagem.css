@@ -1,1 +1,9 @@
 @charset "UTF-8";
+/* configuração de estilo para telas com orientação paisagem */ 
+body {
+    background-image: url('../imagens/cev-landscape.jpg');
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
