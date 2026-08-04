@@ -1,0 +1,18 @@
+@Charset 'UTF-8';
+
+body{
+background-color: red;
+}
+header >nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+header > h1 {
+    flex-basis: 50%;
+    text-align: center;
+}
+header > nav > a {
+    width: 90vw;
+}
