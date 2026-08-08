@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    grid-template-rows: auto auto 1fr auto;
+
+    grid-template-areas:
+        "topo topo"
+        "menu menu"
+        "principal secundario"
+        "rodape rodape";
+
+    gap: 10px;
+
+    padding: 10px;
+}
+
+/* TOPO */
+
+.topo {
+    grid-area: topo;
+
+    background-color: #1d3557;
+    color: white;
+
+    padding: 30px;
+    text-align: center;
+}
+
+/* MENU */
+
+.menu {
+    grid-area: menu;
+
+    background-color: #457b9d;
+
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* PRINCIPAL */
+
+.principal {
+    
+    grid-area: principal;
+
+    min-height: 400px;
+    padding: 30px;
+
+    background-image: url('../imagem/wallpaper002.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: grey;
+}
+
+.principal h2 {
+    margin-bottom: 20px;
+}
+
+/* SECUNDÁRIO */
+
+.secundario {
+    grid-area: secundario;
+
+    background-color: #d9ed92;
+
+    padding: 30px;
+}
+
+.secundario h2 {
+    margin-bottom: 20px;
+}
+
+.secundario ul {
+    padding-left: 20px;
+}
+
+.secundario li {
+    margin-bottom: 10px;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    grid-area: rodape;
+
+    background-color: #1d3557;
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+}

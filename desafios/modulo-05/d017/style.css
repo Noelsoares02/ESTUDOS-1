@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.container {
+    display: grid;
+    grid-template-rows: 80px 40px 200px;
+    grid-template-columns: 200px 150px;
+    gap: 10px
+    ;
+}
+.caixa{
+    background-color:lightgray ;
+    border: 1 px solid black;
+}
+#topo{
+
+}
