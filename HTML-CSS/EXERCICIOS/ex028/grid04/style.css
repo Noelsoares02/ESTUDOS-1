@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  
+}
+.caixas1{
+    background-color: #f00;
+   /* grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5; */
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+}
+.caixas2{
+    background-color: #0f0;
+    grid-row: 2 / 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.caixas3{
+    background-color: #00f;
+    grid-row-start: 2;  
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}

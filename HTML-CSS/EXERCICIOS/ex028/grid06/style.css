@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  
+}
+.caixas1{
+    background-color: #f00;
+    
+    grid-area: 1 / 1 / 2 / 5;
+}
+.caixas2{
+    background-color: #0f0;
+    
+    grid-area: 2 / 1 / 4 / 3;
+}
+.caixas3{
+    background-color: #00f;
+    
+    grid-area: 2 / 3 / 4 / 5;
+}
